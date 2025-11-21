@@ -19,4 +19,4 @@ void modifyVector(vector<int>& arr);
 // QUESTION 4:
 void reverseAndCapitalize(char* st);
 
-#endif  //end ASSIGNUTILS_H guard.
+#endif //end ASSIGNUTILS_H guard.
