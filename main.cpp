@@ -23,6 +23,7 @@ int main(int argc, char* argv[]) {
     //*
     cout << "================== Question 2 ==================\n" << endl;
 
+    //int originalArr[] = {1,10,2,9,3,8,4,7,5,6}; //another sample group.
     int originalArr[] = {5, 12, 3, 20, 7, 1};
     int size = sizeof(originalArr) / sizeof(originalArr[0]);
     int threshold = 6;
@@ -30,10 +31,10 @@ int main(int argc, char* argv[]) {
 
     int* filtered = filterAboveThreshold(originalArr, size, threshold, newSize);
     printArray(originalArr, size);
-
+    cout << "old size: " << size << '.' << endl; //just checking.
     cout << "Filtered array (greater than " << threshold << "): ";
     printArray(filtered, newSize);
-    cout << "newSize: " << newSize << endl;
+    cout << "newSize: " << newSize << '.' << endl;
 
     delete[] filtered;
     /*/
