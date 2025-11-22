@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
     */
     ////////////////////////// MAIN FOR QUESTION 2 //////////////////////////
-    //*
+    /*
     cout << "================== Question 2 ==================\n" << endl;
 
     //int originalArr[] = {1,10,2,9,3,8,4,7,5,6}; //another sample group.
@@ -37,9 +37,9 @@ int main(int argc, char* argv[]) {
     cout << "newSize: " << newSize << '.' << endl;
 
     delete[] filtered;
-    /*/
+    */
     ////////////////////////// MAIN FOR QUESTION 3 //////////////////////////
-    /*
+    //*
     cout << "================== Question 3 ==================\n" << endl;
     
     if (argc < 2) {
@@ -56,7 +56,7 @@ int main(int argc, char* argv[]) {
     vector<int> arr(n);
     readVector(arr);
     modifyVector(arr);
-    */
+    /*/
     ////////////////////////// MAIN FOR QUESTION 4 //////////////////////////
     /*
     cout << "================== Question 4 ==================\n" << endl;

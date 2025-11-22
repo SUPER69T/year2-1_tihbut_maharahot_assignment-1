@@ -4,6 +4,8 @@
 #include <typeinfo>
 using namespace std;
 
+////////////////////////// FUNCTION FOR QUESTION 1 //////////////////////////
+
 char* duplicateVowels(const char* str){
     
     string output_str; //creating a local string for easy appending.
@@ -28,6 +30,8 @@ char* duplicateVowels(const char* str){
     strcpy(output_char_ptr, output_str.c_str()); //GPT recommends using memcpy here for safety and performance reasons. 
     return output_char_ptr;
 }
+
+////////////////////////// FUNCTIONS FOR QUESTION 2 //////////////////////////
 
 int* filterAboveThreshold(const int* arr, int size, int threshold, int& newSize){
     newSize = size;
@@ -56,7 +60,7 @@ int* filterAboveThreshold(const int* arr, int size, int threshold, int& newSize)
 void printArray(const int* arr, int size){
     if (size > 0){
         for (size_t i = 0; i < size - 1; i++){
-            cout << arr[i] << ", "; //unlike - "endl", '\n' does't flush.(ended up not using \n though.)       (V)
+            cout << arr[i] << ", "; //unlike - "endl", '\n' does't flush. (ended up not using \n though).       (V)
             //each flush triggers a system call - slowing the system down, which is why it is much
             //faster to just stream the entire byte code data as a batch before flushing once,
             //which btw happens automatically in cpp - there is no requirement to manually flush.
@@ -69,4 +73,14 @@ void printArray(const int* arr, int size){
         return;
     }
     cout << "tried to print an empty array" << endl; //an else statement redundant because I used "return in the if statement".
+}
+
+////////////////////////// FUNCTIONS FOR QUESTION 3 //////////////////////////
+
+void readVector(vector<int>& vec){
+
+}
+
+void modifyVector(vector<int> vec){
+
 }
