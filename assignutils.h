@@ -15,6 +15,7 @@ void printArray(const int* arr, int size);
 // QUESION 3:
 void readVector(vector<int>& vec);
 void modifyVector(vector<int>& arr);
+void printVector(const vector<int>& vec);
 
 // QUESTION 4:
 void reverseAndCapitalize(char* st);

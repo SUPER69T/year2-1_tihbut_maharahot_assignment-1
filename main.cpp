@@ -54,8 +54,11 @@ int main(int argc, char* argv[]) {
     }
 
     vector<int> arr(n);
+    printVector(arr);
     readVector(arr);
+    printVector(arr);
     modifyVector(arr);
+    printVector(arr);
     /*/
     ////////////////////////// MAIN FOR QUESTION 4 //////////////////////////
     /*

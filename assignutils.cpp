@@ -78,9 +78,24 @@ void printArray(const int* arr, int size){
 ////////////////////////// FUNCTIONS FOR QUESTION 3 //////////////////////////
 
 void readVector(vector<int>& vec){
-
+    size_t len = vec.size();
+    for (size_t i = 0; i < len; i++){
+        cin >> vec[i];
+    }
 }
 
-void modifyVector(vector<int> vec){
+void modifyVector(vector<int>& vec){
+    size_t len = vec.size();
+    int temp = vec[0]; //assigning the first index.
+    for (size_t i = 1; i < len; i++){ //iteration should start from the second index.
+        vec[i] = vec[i] + temp;
+        temp = vec[i];
+    }
+}
 
+void printVector(const vector<int>& vec){
+    for (int x : vec) {
+        cout << x << " ";
+    }
+    cout << endl;
 }
