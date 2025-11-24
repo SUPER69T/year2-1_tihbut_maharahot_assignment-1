@@ -94,24 +94,26 @@ void modifyVector(vector<int>& vec){
 }
 
 void printVector(const vector<int>& vec){
-    for (int x : vec) {
+    for(int x : vec){
         cout << x << " ";
     }
     cout << endl;
 }
 
-void reverseAndCapitalize(char* str){
-    int size = sizeof(str) / sizeof(str[0]);
-    vector<char> temp_vec(size);
-    for (size_t i = 0; i < size; i++){
-        if(64 < str[i] && str[i] < 91){ //turning uppercase into lowercase.
-        str[i] += 32;
+void reverseAndCapitalize(char* str){ //fix: skipping the first element.
+    int size = strlen(str);
+    char* temp_c_arr = new char[size + 1];
+    temp_c_arr[size] = '\0';
+    char temp_c;
+    for(size_t i = 0; i < size; i++){
+        temp_c = str[i];
+        if(64 < temp_c && temp_c < 91){ //turning uppercase into lowercase.
+        temp_c += 32;
         }
-        else if(96 < str[i] && str[i] < 123){ //turning lowercase into uppercase.
-            str[i] -= 32;
+        else if(96 < temp_c && temp_c < 123){ //turning lowercase into uppercase.
+            temp_c -= 32;
         }
-        temp_vec.push_back(str[i])
+        temp_c_arr[size - i - 1] = temp_c;
     }
-    char* temp_C_arr = new char[size];
-    copy(begin(temp_vec), end(temp_vec), str);
+    strcpy(str, temp_c_arr);
 }

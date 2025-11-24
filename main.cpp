@@ -75,5 +75,6 @@ int main(int argc, char* argv[]) {
 
     cout << "Modified string: " << input << endl;
     //*/
+    //delete[] input;
     return 0;
 }
