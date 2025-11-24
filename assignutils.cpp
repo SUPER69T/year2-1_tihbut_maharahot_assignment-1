@@ -87,7 +87,7 @@ void readVector(vector<int>& vec){
 void modifyVector(vector<int>& vec){
     size_t len = vec.size();
     int temp = vec[0]; //assigning the first index.
-    for (size_t i = 1; i < len; i++){ //iteration should start from the second index.
+    for(size_t i = 1; i < len; i++){ //iteration should start from the second index.
         vec[i] = vec[i] + temp;
         temp = vec[i];
     }
@@ -102,18 +102,50 @@ void printVector(const vector<int>& vec){
 
 void reverseAndCapitalize(char* str){ //fix: skipping the first element.
     int size = strlen(str);
-    char* temp_c_arr = new char[size + 1];
-    temp_c_arr[size] = '\0';
-    char temp_c;
-    for(size_t i = 0; i < size; i++){
-        temp_c = str[i];
-        if(64 < temp_c && temp_c < 91){ //turning uppercase into lowercase.
-        temp_c += 32;
+    cout << "Array: " << str << ", size: " << size << "\n";
+    size_t iter = size / 2;
+    char start;
+    char end;
+    for(size_t i = 0; i < iter; i++){
+        start = str[i];
+        end = str[size - i - 1];
+        if(64 < start && start < 91){ //turning uppercase into lowercase.
+        start += 32;
         }
-        else if(96 < temp_c && temp_c < 123){ //turning lowercase into uppercase.
-            temp_c -= 32;
+        else if(96 < start && start < 123){ //turning lowercase into uppercase.
+            start -= 32;
         }
-        temp_c_arr[size - i - 1] = temp_c;
+        if(64 < end && end < 91){ //turning uppercase into lowercase.
+        end += 32;
+        }
+        else if(96 < end && end < 123){ //turning lowercase into uppercase.
+            end -= 32;
+        }
+
+        //debugging:
+        /*
+        cout << "start: " << start << "\n";
+        cout << "end: " << end << "\n";
+        */
+
+        str[i] = end;
+        str[size - i - 1] = start;
     }
-    strcpy(str, temp_c_arr);
+    if(size % 2 != 0){
+        char mid_elem = str[size / 2];
+        if(64 < mid_elem && mid_elem < 91){ //turning uppercase into lowercase.
+        mid_elem += 32;
+        }
+        else if(96 < mid_elem && mid_elem < 123){ //turning lowercase into uppercase.
+            mid_elem -= 32;
+        }
+
+        //debugging:
+        /*
+        cout << "mid_elem: " << mid_elem << "\n";
+        */
+
+        str[size / 2] = mid_elem;
+    }
+    
 }

@@ -74,7 +74,6 @@ int main(int argc, char* argv[]) {
     reverseAndCapitalize(input);
 
     cout << "Modified string: " << input << endl;
-    //*/
-    //delete[] input;
+
     return 0;
 }
