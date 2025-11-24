@@ -99,3 +99,19 @@ void printVector(const vector<int>& vec){
     }
     cout << endl;
 }
+
+void reverseAndCapitalize(char* str){
+    int size = sizeof(str) / sizeof(str[0]);
+    vector<char> temp_vec(size);
+    for (size_t i = 0; i < size; i++){
+        if(64 < str[i] && str[i] < 91){ //turning uppercase into lowercase.
+        str[i] += 32;
+        }
+        else if(96 < str[i] && str[i] < 123){ //turning lowercase into uppercase.
+            str[i] -= 32;
+        }
+        temp_vec.push_back(str[i])
+    }
+    char* temp_C_arr = new char[size];
+    copy(begin(temp_vec), end(temp_vec), str);
+}

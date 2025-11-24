@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
     delete[] filtered;
     */
     ////////////////////////// MAIN FOR QUESTION 3 //////////////////////////
-    //*
+    /*
     cout << "================== Question 3 ==================\n" << endl;
     
     if (argc < 2) {
@@ -59,9 +59,9 @@ int main(int argc, char* argv[]) {
     printVector(arr);
     modifyVector(arr);
     printVector(arr);
-    /*/
+    */
     ////////////////////////// MAIN FOR QUESTION 4 //////////////////////////
-    /*
+    ///*
     cout << "================== Question 4 ==================\n" << endl;
 
     const int MAX_LENGTH = 1000;
@@ -74,6 +74,6 @@ int main(int argc, char* argv[]) {
     reverseAndCapitalize(input);
 
     cout << "Modified string: " << input << endl;
-    */
+    //*/
     return 0;
 }
