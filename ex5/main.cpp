@@ -6,10 +6,10 @@ using namespace MathUtils;
 
 int main(int argc, char* argv[]){
 
-    ////////////////////////// MAIN FOR QUESTION 2 //////////////////////////
-    ///*
-    std::cout << "================== Question 2 ==================\n" << std::endl;
-    //*/
+    ////////////////////////// MAIN FOR QUESTION 5 //////////////////////////
+    /*
+    std::cout << "================== Question 5 ==================\n" << std::endl;
+    
     std::cout << "Enter the number of elements: " << std::endl;
     int count = 0;
     std::cin >> count;
@@ -29,5 +29,23 @@ int main(int argc, char* argv[]){
     catch(const std::exception& e){
         std::cerr << "Error: " << e.what() << '\n';
     }
-    std::cout << vector_average(vec) << std::endl;
+    std::cout << "average: " << vector_average(vec) << std::endl;
+
+    */
+
+    std::vector<int> vec1 = {1, 10, 2, 9, 3, 8, 4, 7, 5, 6};
+    std::vector<int> vec2 = {5, 12, 3, 6, 20, 7, 1};
+    std::cout << "primes in vec1: ";
+    print_primes(vec1);
+    std::cout << '\n';
+    std::cout << "primes in vec2: ";
+    print_primes(vec2);
+    std::cout << '\n';
+    std::cout << "perfect numbers in vec1: ";
+    print_perfect_numbers(vec1);
+    std::cout << '\n';
+    std::cout << "perfect numbers in vec2: ";
+    print_perfect_numbers(vec2);
+    std::cout << '\n';
+    return 0;
 }
