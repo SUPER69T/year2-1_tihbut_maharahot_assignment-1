@@ -3,6 +3,8 @@
 
 using namespace std;
 
+////////////////////////// FUNCTIONS FOR QUESTION 6 //////////////////////////
+
 int** allocateMatrix(int size){
     int** matrix = new int*[size];
     for(int i = 0; i < size; ++i){

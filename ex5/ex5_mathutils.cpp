@@ -5,7 +5,7 @@
 
 namespace MathUtils {
 
-////////////////////////// FUNCTIONS FOR QUESTION 1 //////////////////////////
+////////////////////////// FUNCTIONS FOR QUESTION 5 //////////////////////////
 
     long vector_average(const std::vector<int>& vec){
         int sum = 0;
