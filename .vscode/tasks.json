@@ -9,8 +9,8 @@
                 "-g",
                 "-I",
                 "${workspaceFolder}",
-                "./ex5/mathutils.cpp",
-                "./ex5/main.cpp",
+                "./ex5/ex5_mathutils.cpp",
+                "./ex5/ex5_main.cpp",
                 "-o",
                 "${workspaceFolder}\\program.exe"
             ],
