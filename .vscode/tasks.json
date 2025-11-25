@@ -9,8 +9,8 @@
                 "-g",
                 "-I",
                 "${workspaceFolder}",
-                "./assignutils.cpp",
-                "./main.cpp",
+                "./ex1-4/ex1-4_assignutils.cpp",
+                "./ex1-4/ex1-4_main.cpp",
                 "-o",
                 "${workspaceFolder}\\program.exe"
             ],

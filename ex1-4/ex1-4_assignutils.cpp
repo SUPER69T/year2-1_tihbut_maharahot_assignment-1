@@ -1,7 +1,9 @@
-#include "assignutils.h"
+#include "ex1-4_assignutils.h"
 #include <cstring>
 #include <vector>
 #include <typeinfo>
+#include <string>
+using namespace std;
 
 ////////////////////////// FUNCTION FOR QUESTION 1 //////////////////////////
 
