@@ -2,7 +2,6 @@
 #include <cstring>
 #include <vector>
 #include <typeinfo>
-using namespace std;
 
 ////////////////////////// FUNCTION FOR QUESTION 1 //////////////////////////
 

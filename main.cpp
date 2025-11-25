@@ -1,7 +1,7 @@
 #include "assignutils.h"
 
 int main(int argc, char* argv[]) {
-    /*
+    ///*
     ////////////////////////// MAIN FOR QUESTION 1 //////////////////////////
 
     cout << "================== Question 1 ==================\n" << endl;
@@ -18,9 +18,9 @@ int main(int argc, char* argv[]) {
     delete[] result1;
     delete[] result2;
 
-    */
+    ///*
     ////////////////////////// MAIN FOR QUESTION 2 //////////////////////////
-    /*
+    ///*
     cout << "================== Question 2 ==================\n" << endl;
 
     //int originalArr[] = {1,10,2,9,3,8,4,7,5,6}; //another sample group.
@@ -37,9 +37,9 @@ int main(int argc, char* argv[]) {
     cout << "newSize: " << newSize << '.' << endl;
 
     delete[] filtered;
-    */
+    //*/
     ////////////////////////// MAIN FOR QUESTION 3 //////////////////////////
-    /*
+    ///*
     cout << "================== Question 3 ==================\n" << endl;
     
     if (argc < 2) {
@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
     printVector(arr);
     modifyVector(arr);
     printVector(arr);
-    */
+    //*/
     ////////////////////////// MAIN FOR QUESTION 4 //////////////////////////
     ///*
     cout << "================== Question 4 ==================\n" << endl;
@@ -74,6 +74,6 @@ int main(int argc, char* argv[]) {
     reverseAndCapitalize(input);
 
     cout << "Modified string: " << input << endl;
-
+    //*/
     return 0;
 }
