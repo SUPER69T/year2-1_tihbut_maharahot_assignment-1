@@ -7,7 +7,7 @@ using namespace MathUtils;
 int main(int argc, char* argv[]){
 
     ////////////////////////// MAIN FOR QUESTION 5 //////////////////////////
-    /*
+    ///*
     std::cout << "================== Question 5 ==================\n" << std::endl;
     
     std::cout << "Enter the number of elements: " << std::endl;
@@ -30,9 +30,7 @@ int main(int argc, char* argv[]){
         std::cerr << "Error: " << e.what() << '\n';
     }
     std::cout << "average: " << vector_average(vec) << std::endl;
-
-    */
-
+    //*/
     std::vector<int> vec1 = {1, 10, 2, 9, 3, 8, 4, 7, 5, 6};
     std::vector<int> vec2 = {5, 12, 3, 6, 20, 7, 1};
     std::cout << "primes in vec1: ";

@@ -2,17 +2,17 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ build ex5",
+            "label": "C/C++: g++ build ex6",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "-I",
                 "${workspaceFolder}",
-                "./ex5/ex5_mathutils.cpp",
-                "./ex5/ex5_main.cpp",
+                "./ex6/ex6_matrixutils.cpp",
+                "./ex6/ex6_main.cpp",
                 "-o",
-                "${workspaceFolder}\\program.exe"
+                "${workspaceFolder}\\ex6_program.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -24,16 +24,16 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Build and run ex5."
+            "detail": "Build ex6 sources."
         },
         {
             "type": "shell",
-            "label": "Run program",
-            "command": "${workspaceFolder}\\program.exe",
+            "label": "Run ex6 program",
+            "command": "${workspaceFolder}\\ex6_program.exe",
             "group": {
                 "kind": "test"
             },
-            "detail": "Run the compiled program."
+            "detail": "Run the compiled ex6 program."
         }
     ],
     "version": "2.0.0"
